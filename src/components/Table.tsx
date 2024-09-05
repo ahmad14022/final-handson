@@ -9,9 +9,9 @@ interface TableProps {
 
 const Table: React.FC<TableProps> = ({ columns, data, onEdit, onRemove }) => {
     return (
-        <div className="p-5">
+        <div>
             <table className="w-full bg-gray-800 text-white shadow-lg">
-                <thead className="bg-gray-700 text-gray-400">
+                <thead className="bg-[#212529] border-b-2 border-white">
                     <tr>
                         <th className="p-4 text-left text-white bold">No</th>
                         {columns.map((column, index) => (
@@ -22,7 +22,7 @@ const Table: React.FC<TableProps> = ({ columns, data, onEdit, onRemove }) => {
                 </thead>
                 <tbody>
                     {data.map((row, i) => (
-                        <tr key={i} className={`${i % 2 === 0 ? "bg-gray-800" : "bg-gray-700"} hover:bg-gray-600`}>
+                        <tr key={i} className={`${i % 2 === 0 ? "bg-[#2C3034]" : "bg-gray-700"} hover:bg-gray-600`}>
                             <td className="p-4 text-gray-700">{i + 1}</td>
                             {columns.map((column, colIndex) => (
                                 <td key={colIndex} className="px-6 py-4 whitespace-nowrap">{row[column]}</td>
