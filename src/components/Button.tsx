@@ -1,7 +1,7 @@
 interface ButtonProps {
-    color?: string; // warna button (optional)
-    onClick?: () => void; // function yang akan dipanggil saat button diklik
-    children: React.ReactNode; // isi button
+    color?: string;
+    onClick?: () => void;
+    children: React.ReactNode;
 }
 
 export default function Button({ color = 'bg-blue-500', onClick, children }: ButtonProps) {

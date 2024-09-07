@@ -8,7 +8,7 @@
 }
 
 body {
-  @apply min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 overflow-hidden;
+  @apply min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900;
   animation: gradient-x 15s ease infinite;
 }
 
